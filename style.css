@@ -1,0 +1,111 @@
+
+body{
+    background-size: 100%;
+    max-width: auto;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+.welcome {
+    background-image: url('img/multilanguage.jpeg');
+    min-height: 600px;
+    
+} 
+
+.education{
+    background-image: url('img/multilanguage3.jpeg');
+    min-height: 400px;
+    
+}
+.history{
+    background-image: url('img/test.jpeg');
+    min-height: 400px;
+  
+}
+
+.contact{
+    background-image: url('img/contact.jpg');
+    min-height: 600px;
+}
+
+.welcome, .education, .history, .contact{
+    /* position: relative; */
+    /* opacity: 0.70; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+
+/* .text{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    text-align: center;
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+} */
+
+.welcometext{
+    text-align: center;
+    /* top: 100%; */
+    font-size: 24px;
+    /* font-weight: 400; */
+    line-height: 1.8em;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    padding: 30%;
+
+}
+
+.educationtext{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    color: white;
+    padding: 10%;
+
+}
+
+.historytext{
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: 4px;
+    /* text-transform: uppercase; */
+    background-color: transparent;
+    color: #fff;
+    padding: 10%;
+
+}
+
+.contacttext{
+    text-align: center;
+    font-size: 21;
+    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+    background-color: transparent;
+    color: black;
+    padding: 10%;
+
+}
+
+/* @media(max-width:568px){
+    .welcome, .education, .history, .contact{
+    background-attachment: scroll;
+    }
+} */
+
+.row {
+    min-width: 50px;
+    min-height: 400px;
+}
