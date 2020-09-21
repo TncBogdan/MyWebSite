@@ -15,7 +15,7 @@ body{
 
 .education{
     background-image: url('img/school.jpeg');
-    min-height: 400px;
+    min-height: 300px;
     
 }
 
@@ -33,7 +33,7 @@ a{
     min-height: 600px;
 }
 
-.welcome, .education, .history, .contact, .row, .projects{
+.welcome, .education, .history, .contact, .row, .projects, button{
     /* position: relative; */
     /* opacity: 0.70; */
     background-position: center;
@@ -82,20 +82,20 @@ a{
 }
 
 .projects{
-    background-image: url("img/school.jpeg");
+    background-image: url("img/contact.jpeg");
     min-height: auto;
 }
 
-.projectbutton{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-}
-
-.projectbutton img{
-    width: 100%;
+button{
     padding: 0%;
+    margin: 0%;
+    background-image: url(img/trainingproject.jpg);
+    font-size: 24px;
+    line-height: 1.8em;
+    min-height: 2rem;
+    min-width: 100%;
+    color: bisque;
 }
-
 .historytext{
     text-align: center;
     font-size: 23px;
