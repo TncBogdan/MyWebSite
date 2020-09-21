@@ -9,28 +9,31 @@ body{
 
 
 .welcome {
-    background-image: url('img/multilanguage.jpeg');
+    background-image: url('img/multilanguage3.jpeg');
     min-height: 600px;
-    
 } 
 
 .education{
-    background-image: url('img/multilanguage3.jpeg');
+    background-image: url('img/school.jpeg');
     min-height: 400px;
     
 }
+
+a{
+   color: bisque;
+}
 .history{
-    background-image: url('img/test.jpeg');
+    background-image: url('img/multilanguage.jpeg');
     min-height: 400px;
   
 }
 
 .contact{
-    background-image: url('img/contact.jpg');
+    background-image: url('img/contact.jpeg');
     min-height: 600px;
 }
 
-.welcome, .education, .history, .contact{
+.welcome, .education, .history, .contact, .row{
     /* position: relative; */
     /* opacity: 0.70; */
     background-position: center;
@@ -40,25 +43,9 @@ body{
   
 }
 
-/* .text{
-    position: absolute;
-    top: 50%;
-    width: auto;
-    text-align: center;
-    color: #000000;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    background-color: transparent;
-    color: #fff;
-    padding: 20px;
-} */
-
 .welcometext{
     text-align: center;
-    /* top: 100%; */
     font-size: 24px;
-    /* font-weight: 400; */
     line-height: 1.8em;
     text-transform: uppercase;
     background-color: transparent;
@@ -67,13 +54,30 @@ body{
 
 }
 
+.row{
+    background-image: url('img/multilanguage3.jpeg');
+    min-height: auto;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.column img{
+    width: 100%;
+    
+}
+
 .educationtext{
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 1.8em;
     letter-spacing: 4px;
+    /* opacity: 70%; */
     background-color: transparent;
-    color: white;
-    padding: 10%;
+    color: black;
+    padding: 30%;
 
 }
 
@@ -81,31 +85,20 @@ body{
     text-align: center;
     font-size: 23px;
     letter-spacing: 4px;
-    /* text-transform: uppercase; */
     background-color: transparent;
-    color: #fff;
+    color: white;
     padding: 10%;
 
 }
 
 .contacttext{
-    text-align: center;
+    text-align: left;
     font-size: 21;
     letter-spacing: 2px;
-    /* text-transform: uppercase; */
     background-color: transparent;
-    color: black;
-    padding: 10%;
+    color: whitesmoke;
+    /* padding: 20%; */
 
 }
 
-/* @media(max-width:568px){
-    .welcome, .education, .history, .contact{
-    background-attachment: scroll;
-    }
-} */
 
-.row {
-    min-width: 50px;
-    min-height: 400px;
-}
