@@ -33,7 +33,7 @@ a{
     min-height: 600px;
 }
 
-.welcome, .education, .history, .contact, .row{
+.welcome, .education, .history, .contact, .row, .projects{
     /* position: relative; */
     /* opacity: 0.70; */
     background-position: center;
@@ -49,7 +49,7 @@ a{
     line-height: 1.8em;
     text-transform: uppercase;
     background-color: transparent;
-    color: #fff;
+    color: bisque;
     padding: 30%;
 
 }
@@ -76,9 +76,24 @@ a{
     letter-spacing: 4px;
     /* opacity: 70%; */
     background-color: transparent;
-    color: black;
+    color: bisque;
     padding: 30%;
 
+}
+
+.projects{
+    background-image: url("img/school.jpeg");
+    min-height: auto;
+}
+
+.projectbutton{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.projectbutton img{
+    width: 100%;
+    padding: 0%;
 }
 
 .historytext{
@@ -86,7 +101,7 @@ a{
     font-size: 23px;
     letter-spacing: 4px;
     background-color: transparent;
-    color: white;
+    color: bisque;
     padding: 10%;
 
 }
