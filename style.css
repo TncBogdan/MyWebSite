@@ -9,12 +9,12 @@ body{
 
 
 .welcome {
-    background-image: url('img/multilanguage3.jpeg');
-    min-height: 600px;
+    background-image: url('img/becuri.jpg');
+    /* min-height: 600px; */
 } 
 
 .education{
-    background-image: url('img/school.jpeg');
+    background-image: url('img/education2.jpeg');
     min-height: 300px;
     
 }
@@ -33,14 +33,15 @@ a{
     min-height: 600px;
 }
 
-.welcome, .education, .history, .contact, .row, .projects, button{
+.welcome, .education, .history, .contact, .row, .projects{
     /* position: relative; */
     /* opacity: 0.70; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-  
+    transform: scale(1);
+
 }
 
 .welcometext{
@@ -55,7 +56,7 @@ a{
 }
 
 .row{
-    background-image: url('img/multilanguage3.jpeg');
+    background-image: url('img/becuri.jpg');
     min-height: auto;
 }
 
@@ -76,25 +77,26 @@ a{
     letter-spacing: 4px;
     /* opacity: 70%; */
     background-color: transparent;
-    color: bisque;
+    color: wheat;
     padding: 30%;
 
 }
 
 .projects{
-    background-image: url("img/contact.jpeg");
+    background-image: url("img/education2.jpeg");
     min-height: auto;
 }
 
 button{
-    padding: 0%;
-    margin: 0%;
     background-image: url(img/trainingproject.jpg);
-    font-size: 24px;
-    line-height: 1.8em;
-    min-height: 2rem;
-    min-width: 100%;
-    color: bisque;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;   
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    font-size: 10px;
 }
 .historytext{
     text-align: center;
