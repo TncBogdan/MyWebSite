@@ -15,7 +15,7 @@ body{
 
 .education{
     background-image: url('img/education2.jpeg');
-    min-height: 300px;
+    min-height: 500px;
     
 }
 
@@ -74,27 +74,30 @@ a{
     text-align: center;
     font-size: 24px;
     line-height: 1.8em;
+
     letter-spacing: 4px;
     /* opacity: 70%; */
     background-color: transparent;
     color: wheat;
-    padding: 30%;
+    padding: 1%;
 
 }
 
 .projects{
     background-image: url("img/education2.jpeg");
     min-height: auto;
+    padding: 10%;
 }
 
 button{
     background-image: url(img/trainingproject.jpg);
-    padding: 0;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-position: center;   
-    width: 100%;
-    height: auto;
+    padding: 0%;
+    margin: 0%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height: 183px;
+    width: 275px;
     cursor: pointer;
     font-size: 10px;
 }
@@ -114,7 +117,7 @@ button{
     letter-spacing: 2px;
     background-color: transparent;
     color: whitesmoke;
-    /* padding: 20%; */
+    padding: 7%;
 
 }
 
