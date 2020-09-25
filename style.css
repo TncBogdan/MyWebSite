@@ -13,6 +13,34 @@ body{
     /* min-height: 600px; */
 } 
 
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.navbar{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar li a{
+    transition: all 1.5s ease 0.3s;
+}
+
+.navbar li a:hover{
+    transition: all 0s;
+    color: cornflowerblue;
+}
+
 .education{
     background-image: url('img/education2.jpeg');
     min-height: 500px;
