@@ -1,16 +1,14 @@
 
-body{
+*{
     background-size: 100%;
     max-width: auto;
     margin: 0%;
     padding: 0%;
 }
 
-
-
 .welcome {
     background-image: url('img/becuri.jpg');
-    min-height: 500px;
+    min-height: 900px;
 } 
 
 header{
@@ -43,7 +41,7 @@ header{
 
 .education{
     background-image: url('img/education2.jpeg');
-    min-height: 500px;
+    min-height: 600px;
     
 }
 
@@ -61,42 +59,70 @@ a{
     min-height: 600px;
 }
 
-.welcome, .education, .aboutme, .contact, .row, .projects{
-    /* position: relative; */
+.welcome, .education, .aboutme, .contact, .column, .projects{
+    position: relative;
     /* opacity: 0.70; */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     transform: scale(1);
-
-}
-
-.welcometext{
-    text-align: center;
-    font-size: 24px;
-    line-height: 1.8em;
-    text-transform: uppercase;
-    background-color: transparent;
-    color: bisque;
-    padding: 30%;
-
-}
-
-.row{
-    background-image: url('img/becuri.jpg');
-    min-height: auto;
-}
-
-.column{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    
 }
 
 .column img{
-    width: 100%;
-    
+    /* margin: 10%; */
+   width: 100px;
 }
+
+.column{
+    position: relative;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    /* row-gap: 100px; */
+}
+
+.column .left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 100px;
+    animation-name: moveleft;
+    animation-duration: 2s;
+}
+
+.column .right{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+    animation-name: moveright;
+    animation-duration: 2s;
+}
+
+@keyframes moveleft{
+    from{
+        transform: translateX(700px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes moveright{
+    from{
+        transform: translateX(-700px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 
 .educationtext{
     text-align: center;
