@@ -10,14 +10,14 @@ body{
 
 .welcome {
     background-image: url('img/becuri.jpg');
-    /* min-height: 600px; */
+    min-height: 500px;
 } 
 
 header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px 10%;
+    padding: 5% 10%;
 }
 
 .navbar{
@@ -29,7 +29,7 @@ header{
 
 .navbar li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 45px;
 }
 
 .navbar li a{
@@ -50,9 +50,9 @@ header{
 a{
    color: bisque;
 }
-.history{
+.aboutme{
     background-image: url('img/multilanguage.jpeg');
-    min-height: 400px;
+    min-height: 900px;
   
 }
 
@@ -61,7 +61,7 @@ a{
     min-height: 600px;
 }
 
-.welcome, .education, .history, .contact, .row, .projects{
+.welcome, .education, .aboutme, .contact, .row, .projects{
     /* position: relative; */
     /* opacity: 0.70; */
     background-position: center;
@@ -102,12 +102,10 @@ a{
     text-align: center;
     font-size: 24px;
     line-height: 1.8em;
-
     letter-spacing: 4px;
-    /* opacity: 70%; */
     background-color: transparent;
     color: wheat;
-    padding: 1%;
+    padding: 10%;
 
 }
 
@@ -129,7 +127,7 @@ button{
     cursor: pointer;
     font-size: 10px;
 }
-.historytext{
+.aboutme .aboutmetext{
     text-align: center;
     font-size: 23px;
     letter-spacing: 4px;
