@@ -50,11 +50,11 @@ a{
 }
 
 .contact{
-    background-image: url('img/contact.jpeg');
+    background-image: url('img/becuri.jpg');
     min-height: 600px;
 }
 
-.welcome, .aboutme, .contact, .column, .projects{
+.welcome, .aboutme, .contact, .column, .projects, .mywork{
     position: relative;
     background-position: center;
     background-size: cover;
@@ -65,13 +65,7 @@ a{
 }
 
 .container{
-    /* width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(53, 82, 66, .5), rgba(47, 80, 63, .6)), url("multilanguage3.jpeg")
-    center no-repeat; */
-    /* background-size: cover ; */
     overflow: hidden;
-    /* position: relative; */
 } 
 
 .column img{
@@ -80,7 +74,6 @@ a{
     width: 100px;
     border-radius: 45%;
     box-shadow: black -21px -10px 10px;
-    /* position: absolute; */
 }
 
 .column{
@@ -134,7 +127,7 @@ a{
 }
 
 .projects{
-    background-image: url("img/education2.jpeg");
+    background-image: url("img/becuri.jpg");
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,7 +137,7 @@ a{
 }
 
  h1{
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 .projects .myproject button{
@@ -190,8 +183,33 @@ button {
 
 }
 
-.myproject{
-    /* background-color: gray; */
+.mywork{
+    background-image: url("img/education2.jpeg");
+    overflow: hidden;
+}
+
+.personalproject{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 710px;
+    width: auto;
+    gap: 30px;
+    margin: 20%;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+
+.schoolproject{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 710px;
+    width: auto;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10;
+    margin-top: 10%;
+    margin-bottom: 3%;
 }
 
 
