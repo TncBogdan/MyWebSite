@@ -43,16 +43,6 @@ header{
 a{
    color: bisque;
 }
-.aboutme{
-    background-image: url('img/multilanguage.jpeg');
-    min-height: 900px;
-  
-}
-
-.contact{
-    background-image: url('img/becuri.jpg');
-    min-height: 600px;
-}
 
 .welcome, .aboutme, .contact, .column, .projects, .mywork{
     position: relative;
@@ -69,7 +59,7 @@ a{
 } 
 
 .column img{
-    padding:3%;
+    /* padding:1%; */
     /* border: 1px solid darkgrey; */
     width: 100px;
     border-radius: 45%;
@@ -81,7 +71,6 @@ a{
     grid-template-columns: 1fr 1fr;
     margin-top: 3%;
     position: relative;
-    /* overflow: hidden; */
     margin-left: 5%;
     margin-right: 10%;
     margin-bottom: 5%;
@@ -138,6 +127,7 @@ a{
 
  h1{
     margin-left: 25%;
+    color: whitesmoke;
 }
 
 .projects .myproject button{
@@ -149,8 +139,7 @@ a{
 }
 
 button {
-    /* background-image: url(img/trainingproject.jpg); */
-    padding: 0%;
+    /* padding: 0%; */
     margin-left: 20%;
     margin-right: 20%;
     background-position: center;
@@ -161,26 +150,11 @@ button {
     cursor: pointer;
     font-size: 10px;
     gap: 1fr;
-    border-radius: 50%;
-}
-.aboutme .aboutmetext{
-    text-align: center;
-    font-size: 23px;
-    letter-spacing: 4px;
-    background-color: transparent;
-    color: bisque;
-    padding: 10%;
-
-}
-
-.contacttext{
-    text-align: left;
-    font-size: 21;
-    letter-spacing: 2px;
-    background-color: transparent;
-    color: whitesmoke;
-    padding: 7%;
-
+    border: 1px solid rgb(31, 5, 5);
+    width: 1 fr;
+    box-shadow: black -21px -0px 10px;
+    border-radius: 45%;
+    padding:1%;
 }
 
 .mywork{
@@ -212,4 +186,34 @@ button {
     margin-bottom: 3%;
 }
 
+.aboutme{
+    background-image: url('img/multilanguage.jpeg');
+    min-height: 900px;
+  
+}
 
+.aboutme .aboutmetext{
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    color: bisque;
+    padding: 10%;
+
+}
+
+.contact{
+    background-image: url('img/becuri.jpg');
+    min-height: 600px;
+}
+
+.contacttext{
+    text-align: left;
+    font-size: 31px;
+    letter-spacing: 3px;
+    row-gap: 30%;
+    background-color: transparent;
+    color: whitesmoke;
+    padding: 7%;
+
+}
