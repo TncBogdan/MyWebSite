@@ -211,6 +211,10 @@ button {
     border-radius: 10%;
 }
 
+.schoolproject .tasklist{
+    width: 60%;
+}
+
 .aboutme{
     background-image: url('img/multilanguage.jpeg');
     min-height: 900px;
