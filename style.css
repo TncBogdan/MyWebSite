@@ -8,7 +8,9 @@
 
 .welcome {
     background-image: url('img/becuri.jpg');
-    min-height: 900px;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem)); */
+    /* min-height: 900px; */
 } 
 
 header{
@@ -44,7 +46,7 @@ a{
    color: bisque;
 }
 
-.welcome, .aboutme, .contact, .column, .projects, .mywork{
+.welcome, .aboutme, .contact, .column, .projects{
     position: relative;
     background-position: center;
     background-size: cover;
@@ -119,7 +121,7 @@ a{
     background-image: url("img/becuri.jpg");
     width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     position: relative;
     padding: 10%;
     overflow: hidden;
@@ -135,7 +137,7 @@ a{
 }
 
 .projects .trainingproject button{
-    background-image: url("img/trainingproject2.jpg");
+    background-image: url("img/trainingproject.jpg");
 }
 
 button {
@@ -157,33 +159,56 @@ button {
     padding:1%;
 }
 
-.mywork{
+.mypersonalproject {
     background-image: url("img/education2.jpeg");
+    background-size: cover;
     overflow: hidden;
+    margin-bottom: 0%;
+    min-height: 960px;
 }
+
+.myschoolproject {
+    background-image: url("img/education2.jpeg");
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0%;
+    min-height: 960px;
+}
+
 
 .personalproject{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 710px;
-    width: auto;
+    grid-template-rows: 50% 50%;
     gap: 30px;
     margin: 20%;
-    margin-left: 30%;
     margin-top: 10%;
     margin-bottom: 3%;
 }
 
-.schoolproject{
+.personalproject img{
+    padding:1%;
+    width: 70%;
+    border-radius: 10%;
+}
+
+/* .schoolproject .petclinic .jokeapp .vendingmachine .tasklist .tictactoe .parkingticket */
+.schoolproject
+{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 710px;
-    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
     gap: 30px;
-    margin-left: 10%;
-    margin-right: 10;
     margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 3%;
+}
+
+.schoolproject img{
+    padding:1%;
+    width: 70%;
+    border-radius: 10%;
 }
 
 .aboutme{
@@ -217,3 +242,4 @@ button {
     padding: 7%;
 
 }
+
