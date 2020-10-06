@@ -8,10 +8,15 @@
 
 .welcome {
     background-image: url('img/becuri.jpg');
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem)); */
-    /* min-height: 900px; */
+    
 } 
+
+header .myname{
+    color: whitesmoke;
+    transition: all 1.5s ease 0.7s;
+    font-size: 41px;
+    /* margin-left: 1%; */
+}
 
 header{
     display: flex;
@@ -61,8 +66,6 @@ a{
 } 
 
 .column img{
-    /* padding:1%; */
-    /* border: 1px solid darkgrey; */
     width: 100px;
     border-radius: 45%;
     box-shadow: black -21px -10px 10px;
@@ -141,7 +144,6 @@ a{
 }
 
 button {
-    /* padding: 0%; */
     margin-left: 20%;
     margin-right: 20%;
     background-position: center;
@@ -175,7 +177,6 @@ button {
     min-height: 960px;
 }
 
-
 .personalproject{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,8 +192,6 @@ button {
     width: 70%;
     border-radius: 10%;
 }
-
-/* .schoolproject .petclinic .jokeapp .vendingmachine .tasklist .tictactoe .parkingticket */
 .schoolproject
 {
     display: grid;
