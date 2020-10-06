@@ -242,6 +242,20 @@ button {
     background-color: transparent;
     color: whitesmoke;
     padding: 7%;
+}
 
+.wrapper{
+    position: absolute;
+    bottom: 15%;
+    padding: 0 7% ;
+    
+}
+
+.wrapperrows{
+    max-width: 550px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-rows: auto;
+    gap: 50%;
 }
 
