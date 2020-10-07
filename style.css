@@ -232,9 +232,76 @@ button {
 .contact{
     background-image: url('img/becuri.jpg');
     min-height: 600px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-size: cover;
 }
 
-.contacttext{
+.form-control{
+    width: 600px;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input{
+    height: 45px;
+}
+
+.file{
+    background-color: teal;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    transition: 0.4s;
+    
+}
+
+.file{
+    background-color: #1d9cf1;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.submit{
+    background-color: teal;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    transition: 0.4s ease;
+}
+
+.submit{
+    background-color: #1d9cf1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contacttext{
     text-align: left;
     font-size: 31px;
     letter-spacing: 3px;
@@ -242,20 +309,7 @@ button {
     background-color: transparent;
     color: whitesmoke;
     padding: 7%;
-}
+} */
 
-.wrapper{
-    position: absolute;
-    bottom: 15%;
-    padding: 0 7% ;
-    
-}
 
-.wrapperrows{
-    max-width: 550px;
-    margin: 0 auto;
-    display:grid;
-    grid-template-rows: auto;
-    gap: 50%;
-}
 
