@@ -87,13 +87,15 @@
 				<input type="email" name="email" class="form-control" placeholder="Email" required><br>
 			
 				<textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
-			
+			<div>
 				<input type="file" name="Upload file" title="Upload file" class="form-control file" id="upload" style="display:none;">
-				<label class="form-control file" for="upload">Upload</label>
-				
-			<!-- <div class="field"> -->
-				<div 
-				data-netlify-recaptcha="true" class="form-control file" style="transform:scale(0.8);transform-origin:0 0"></div>
+
+				<label class="form-control submit" for="upload">Upload your file</label>
+			</div>	
+			<!-- <div class="recaptcha"> -->
+				<!-- <div 
+				data-netlify-recaptcha="true" style="transform:scale(0.8);transform-origin:0 0"
+				></div> -->
 			<!-- </div> -->
 				<input type="submit" class="form-control submit" value="Send Message">
 		</form>

@@ -276,10 +276,6 @@ input{
     
 }
 
-data-netlify-recaptcha{
-    right: 50%;
-}
-
 .file{
     background-color: #1d9cf1;
     cursor: pointer;
