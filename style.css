@@ -235,11 +235,22 @@ button {
     margin: 0;
     padding: 0;
     text-align: center;
+    /* row-gap: 15px; */
     background-size: cover;
 }
 
+.contacttext{
+    text-align: center;
+    font-size: 31px;
+    letter-spacing: 3px;
+    background-color: transparent;
+    color: whitesmoke;
+    padding: 7%;
+    top: 5%
+}
+
 .form-control{
-    width: 600px;
+    width: 41%;
     background:transparent;
     border:none;
     outline:none;
@@ -250,6 +261,7 @@ button {
 
 input{
     height: 45px;
+    color: whitesmoke;
 }
 
 .file{
@@ -267,7 +279,11 @@ input{
 .file{
     background-color: #1d9cf1;
     cursor: pointer;
-    opacity: 100%;
+    opacity: 80%;
+}
+
+form .id{
+    cursor: pointer;
 }
 
 .submit{
@@ -279,6 +295,12 @@ input{
     height: 50px;
     margin-top: 20px;
     transition: 0.4s ease;
+}
+
+::placeholder{
+    color: whitesmoke;
+    size: 15px;
+    letter-spacing: 2px;
 }
 
 .submit{
@@ -301,15 +323,7 @@ input{
 
 
 
-/* .contacttext{
-    text-align: left;
-    font-size: 31px;
-    letter-spacing: 3px;
-    row-gap: 30%;
-    background-color: transparent;
-    color: whitesmoke;
-    padding: 7%;
-} */
+
 
 
 

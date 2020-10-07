@@ -74,14 +74,12 @@
 
 <footer>
 	<div class="contact">
-		<!-- <div class="contacttext">
+		<div class="contacttext">
 			<h2>Contact</h2>
 			<ol>Phone: +40755641469</ol>
 			<ol>E-mail: tncbogdan@gmail.com</ol>
 			<ol>Location: Iasi, Romania</ol>
-		</div> -->
-		<!-- <div class="wrapper"> -->
-			<!-- <div class="wrapperrows"> -->
+		</div>
 		<form action="Post" data-netlify="true">
 			
 				<input type="name" class="form-control" name="name" placeholder="Name" required><br>
@@ -90,16 +88,15 @@
 			
 				<textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
 			
-				<input type="file" name="file" class="form-control file" placeholder="Upload file">
-			
+				<input type="file" name="Upload file" title="Upload file" class="form-control file" id="upload" style="display:none;">
+				<label class="form-control file" for="upload">Upload</label>
+				
 			<div class="field">
 				<div
 				data-netlify-recaptcha="true"></div>
 			</div>
 				<input type="submit" class="form-control submit" value="Send Message">
 		</form>
-	<!-- </div> -->
-		<!-- </div> -->
 	</div>
 </footer>
 
