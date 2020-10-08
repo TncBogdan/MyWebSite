@@ -260,8 +260,9 @@ button {
 }
 
 input{
+    background-color: transparent;
     height: 45px;
-    color: whitesmoke;
+    outline: none;
 }
 
 .file{
@@ -280,6 +281,10 @@ input{
     background-color: #1d9cf1;
     cursor: pointer;
     opacity: 80%;
+}
+
+.message{
+    color: whitesmoke;
 }
 
 form .id{
