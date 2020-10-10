@@ -6,8 +6,8 @@
     padding: 0%;
 }
 
-.welcome {
-    background-image: url('img/becuri.jpg');
+.welcome, .projects, .contact {
+    background-image: url('img/tncred.jpg');
 } 
 
 header{
@@ -112,8 +112,8 @@ a{
     }
 }
 
-.projects{
-    background-image: url("img/becuri.jpg");
+.welcome, .projects{
+    /* background-image: url("img/becuri.jpg"); */
     width: auto;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -216,8 +216,8 @@ button {
 
 }
 
-.contact{
-    background-image: url('img/becuri.jpg');
+.welcome, .projects, .contact{
+    /* background-image: url('img/becuri.jpg'); */
     margin: 0;
     padding: 0;
     text-align: center;
