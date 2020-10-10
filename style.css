@@ -280,11 +280,14 @@ form .id{
 
 @media screen and (max-width:600px) {
     .welcome, .projects, .contact{
-        background-image: url("img/becuri_low.jpg");
+        /* background-image: url("img/becuri_low.jpg"); */
         width: auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        transform: scale(1);
+        position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transform: scale(1);
     }
 
     img{
