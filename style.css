@@ -8,14 +8,7 @@
 
 .welcome {
     background-image: url('img/becuri.jpg');
-    
 } 
-
-header .myname{
-    color: whitesmoke;
-    transition: all 1.5s ease 0.7s;
-    font-size: 41px;
-}
 
 header{
     display: flex;
@@ -186,13 +179,7 @@ button {
     margin-bottom: 3%;
 }
 
-.personalproject img{
-    padding:1%;
-    width: 70%;
-    border-radius: 10%;
-}
-.schoolproject
-{
+.schoolproject{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -203,7 +190,7 @@ button {
     margin-bottom: 3%;
 }
 
-.schoolproject img{
+.personalproject img, .schoolproject img{
     padding:1%;
     width: 70%;
     border-radius: 10%;
@@ -231,22 +218,20 @@ button {
 
 .contact{
     background-image: url('img/becuri.jpg');
-    min-height: 600px;
     margin: 0;
     padding: 0;
     text-align: center;
-    /* row-gap: 15px; */
     background-size: cover;
 }
 
-.contacttext{
+.contacttext, h2{
     text-align: center;
     font-size: 31px;
     letter-spacing: 3px;
     background-color: transparent;
     color: whitesmoke;
     padding: 7%;
-    top: 5%
+    /* top: 5% */
 }
 
 .form-control{
@@ -265,30 +250,18 @@ input{
     outline: none;
 }
 
-.file{
-    background-color: teal;
-    background-color: transparent;
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
-    transition: 0.4s;
-    
-}
-
-.file{
-    background-color: #1d9cf1;
+form .id{
     cursor: pointer;
-    opacity: 80%;
 }
 
 .message{
     color: whitesmoke;
 }
 
-form .id{
-    cursor: pointer;
+::placeholder{
+    color: whitesmoke;
+    size: 15px;
+    letter-spacing: 2px;
 }
 
 .submit{
@@ -301,17 +274,47 @@ form .id{
     margin-top: 20px;
     margin-bottom: 10%;
     transition: 0.4s ease;
-}
-
-::placeholder{
-    color: whitesmoke;
-    size: 15px;
-    letter-spacing: 2px;
-}
-
-.submit{
-    background-color: #1d9cf1;
+    border-bottom: none;
     cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .welcome, .projects, .contact{
+        background-image: url("img/becuri_low.jpg");
+        width: auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        transform: scale(1);
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .column img{
+        width: 50%;
+    }
+
+    .myproject button, .trainingproject button{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 100%;
+        width: 50px;
+    }
+
+    .contact{
+        width: 100%;
+    }
+    .contacttext, .li{
+        font-size: 100%;
+        width: 50%;
+    }
 }
 
 
