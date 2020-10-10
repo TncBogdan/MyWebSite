@@ -312,6 +312,7 @@ form .id{
         width: 100%;
     }
     .contacttext, .li{
+        margin: auto;
         font-size: 100%;
         width: 50%;
     }
