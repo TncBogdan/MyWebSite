@@ -12,21 +12,15 @@
 } 
 
 header{
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-row: 1fr; */
     align-items: center;
     padding: 5% 10%;
 }
 
-.navbar{
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-    list-style: none;
-}
-
 .navbar li{
-    font-size: 32px;
+    font-size: 30px;
     display: inline-block;
     padding: 0px 45px;
 }
@@ -68,7 +62,7 @@ a{
     grid-template-columns: 1fr 1fr;
     margin-top: 3%;
     position: relative;
-    margin-left: 5%;
+    margin-left: 15%;
     margin-right: 10%;
     margin-bottom: 5%;
 }
@@ -114,9 +108,9 @@ a{
 
 .projects{
     background-image: url("img/tncblue.jpg");
-    width: auto;
+    /* width: auto; */
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     position: relative;
     padding: 10%;
     overflow: hidden;
@@ -141,8 +135,8 @@ button {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;   
-    height: 183px;
-    width: 275px;
+    height: 201px;
+    width: 201px;
     cursor: pointer;
     font-size: 10px;
     gap: 1fr;
@@ -158,6 +152,7 @@ button {
     background-size: cover;
     overflow: hidden;
     margin-bottom: 0%;
+    /* margin-right: auto; */
     min-height: 960px;
 }
 
@@ -293,6 +288,8 @@ form .id{
 
     .myproject button, .trainingproject button{
         width: 50%;
+        height: 70px;
+        width: 70px;
     }
 
     h1{
