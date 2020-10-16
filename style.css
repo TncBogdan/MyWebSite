@@ -44,8 +44,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transform: scale(1);
-    
+    transform: scale(1);  
 }
 
 .container{
@@ -156,14 +155,6 @@ button {
     min-height: 960px;
 }
 
-.myschoolproject {
-    background-image: url("img/education2.jpeg");
-    background-size: cover;
-    overflow: hidden;
-    margin-bottom: 0%;
-    min-height: 960px;
-}
-
 .personalproject{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -172,6 +163,14 @@ button {
     margin: 20%;
     margin-top: 10%;
     margin-bottom: 3%;
+}
+
+.myschoolproject {
+    background-image: url("img/education2.jpeg");
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 0%;
+    min-height: 960px;
 }
 
 .schoolproject{
@@ -249,14 +248,14 @@ form .id{
     cursor: pointer;
 }
 
-.message{
-    color: whitesmoke;
-}
-
 ::placeholder{
     color: whitesmoke;
     size: 15px;
     letter-spacing: 2px;
+}
+
+.message, .name, .email{
+    color: whitesmoke;
 }
 
 .submit{
