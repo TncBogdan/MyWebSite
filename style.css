@@ -6,15 +6,18 @@
     padding: 0%;
 }
 
+:root{
+--index-background:url("img/tncblue.jpg");
+}
+
 .welcome {
-    background-image: url('img/tncblue.jpg');
+    background-image: var(--index-background);
     width: 100%;
 } 
 
 header{
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-row: 1fr; */
     align-items: center;
     padding: 5% 10%;
 }
@@ -38,7 +41,7 @@ a{
    color: bisque;
 }
 
-.welcome, .aboutme, .contact, .column, .projects{
+.welcome, .aboutme, .contact, .column, .projects, .mypersonalproject, .myschoolproject{
     position: relative;
     background-position: center;
     background-size: cover;
@@ -54,7 +57,7 @@ a{
 .column img{
     width: 100px;
     border-radius: 45%;
-    box-shadow: black 10px 10px 10px;
+    box-shadow: black -12px 10px 10px;
 }
 .column{
     display: grid;
@@ -106,8 +109,7 @@ a{
 }
 
 .projects{
-    background-image: url("img/tncblue.jpg");
-    /* width: auto; */
+    background-image: var(--index-background);
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -115,7 +117,7 @@ a{
     overflow: hidden;
 }
 
- h1{
+h1{
     margin-left: 25%;
     color: whitesmoke;
 }
@@ -140,8 +142,8 @@ button {
     font-size: 10px;
     gap: 1fr;
     border: 1px solid rgb(31, 5, 5);
-    width: 1 fr;
-    box-shadow: black 10px 10px 10px;
+    width: 1fr;
+    box-shadow: black -10px 15px 10px;
     border-radius: 45%;
     padding:1%;
 }
@@ -151,7 +153,6 @@ button {
     background-size: cover;
     overflow: hidden;
     margin-bottom: 0%;
-    /* margin-right: auto; */
     min-height: 960px;
 }
 
@@ -211,7 +212,7 @@ button {
 }
 
 .contact{
-    background-image: url('img/tncblue.jpg');
+    background-image: var(--index-background);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -225,7 +226,6 @@ button {
     background-color: transparent;
     color: whitesmoke;
     padding: 7%;
-    /* top: 5% */
 }
 
 .form-control{
@@ -274,7 +274,7 @@ form .id{
 
 @media screen and (max-width:600px) {
     img{
-        width: 100%;
+        max-width: 320px;
     }
 
     .container{
@@ -289,6 +289,20 @@ form .id{
         width: 50%;
         height: 70px;
         width: 70px;
+    }
+
+    /* .mypersonalproject{
+        width: 100%;
+        height: 100%;
+        
+    } */
+    
+    .personalproject, .schoolproject{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        /* min-height: 10%; */
+
     }
 
     h1{
