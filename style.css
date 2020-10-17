@@ -23,22 +23,35 @@ header{
 }
 
 .navbar li{
-    font-size: 30px;
     display: inline-block;
-    padding: 0px 45px;
 }
 
 .navbar li a{
+    text-decoration: none;
+    display: inline-block;
+    color: bisque;
+    font-size: 30px;
+    padding: 0px 45px;
     transition: all 1.5s ease 0.3s;
 }
 
-.navbar li a:hover{
-    transition: all 0s;
-    color: cornflowerblue;
+.line::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: whitesmoke;
+    transition: width .3s;
 }
 
-a{
-   color: bisque;
+.line:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.navbar li a:hover{
+    transition: all 1s;
+    color: cornflowerblue;
 }
 
 .welcome, .aboutme, .contact, .column, .projects, .mypersonalproject, .myschoolproject{
