@@ -29,7 +29,7 @@ header{
 .navbar li a{
     text-decoration: none;
     display: inline-block;
-    color: bisque;
+    color: white;
     font-size: 30px;
     padding: 0px 45px;
     transition: all 1.5s ease 0.3s;
@@ -40,7 +40,7 @@ header{
     display: block;
     width: 0;
     height: 2px;
-    background: whitesmoke;
+    background: rgb(192, 183, 183);
     transition: width .3s;
 }
 
@@ -51,10 +51,10 @@ header{
 
 .navbar li a:hover{
     transition: all 1s;
-    color: cornflowerblue;
+    color: rgb(192, 183, 183);
 }
 
-.welcome, .aboutme, .contact, .column, .projects, .mypersonalproject, .myschoolproject{
+.welcome, .aboutme, .contact, .column, .projects, .mypersonalproject, .mytrainingproject{
     position: relative;
     background-position: center;
     background-size: cover;
@@ -150,7 +150,6 @@ h1{
     width: 1fr;
     box-shadow: black -10px 15px 10px;
     border-radius: 45%;
-    /* padding:1%; */
 }
 
 .mypersonalproject {
@@ -171,7 +170,31 @@ h1{
     margin-bottom: 3%;
 }
 
-.myschoolproject {
+/*///////////////////////////////////////////////////*/
+
+.personalproject a, .trainingproject a{
+    color: rgb(231, 210, 210);
+    font-size: 27px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.patientportal{
+    opacity: 0;
+    transition: 0.5s ease;
+    background: transparent;
+}
+
+.wrapper:hover .patientportal{
+    opacity: 1;
+} 
+
+
+
+
+/*/////////////////////////////////////////////////////*/
+
+.mytrainingproject {
     background-image: url("img/education2.jpeg");
     background-size: cover;
     overflow: hidden;
@@ -179,7 +202,7 @@ h1{
     min-height: 960px;
 }
 
-.schoolproject{
+.trainingproject{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -190,13 +213,13 @@ h1{
     margin-bottom: 3%;
 }
 
-.personalproject img, .schoolproject img{
+.personalproject img, .trainingproject img{
     padding:1%;
     width: 70%;
     border-radius: 10%;
 }
 
-.schoolproject .tasklist{
+.trainingproject .tasklist{
     width: 60%;
 }
 
@@ -206,7 +229,7 @@ h1{
   
 }
 
-.aboutme .aboutmetext{
+.aboutmetext{
     text-align: center;
     font-size: 36px;
     letter-spacing: 4px;
@@ -214,6 +237,17 @@ h1{
     color: bisque;
     padding: 10%;
 
+}
+
+.aboutmetext a{
+    color:  rgb(122, 74, 74);
+    text-decoration: none;
+}
+
+.aboutmetext a:hover{
+    text-decoration: underline;
+    transition: 1s;
+    color: whitesmoke;
 }
 
 .contact{
@@ -296,7 +330,7 @@ form .id{
         width: 70px;
     }
     
-    .personalproject, .schoolproject{
+    .personalproject, .trainingproject{
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: none;
