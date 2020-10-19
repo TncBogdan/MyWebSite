@@ -1,32 +1,31 @@
-
-*{
+* {
     background-size: 100%;
     max-width: auto;
     margin: 0%;
     padding: 0%;
 }
 
-:root{
---index-background:url("img/tncblue.jpg");
+:root {
+    --index-background: url("img/tncblue.jpg");
 }
 
 .welcome {
     background-image: var(--index-background);
     width: 100%;
-} 
+}
 
-header{
+header {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     padding: 5% 10%;
 }
 
-.navbar li{
+.navbar li {
     display: inline-block;
 }
 
-.navbar li a{
+.navbar li a {
     text-decoration: none;
     display: inline-block;
     color: white;
@@ -49,30 +48,37 @@ header{
     transition: width .3s;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
     transition: all 1s;
     color: rgb(192, 183, 183);
 }
 
-.welcome, .aboutme, .contact, .column, .projects, .mypersonalproject, .mytrainingproject{
+.welcome,
+.aboutme,
+.contact,
+.column,
+.projects,
+.mypersonalproject,
+.mytrainingproject {
     position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transform: scale(1);  
+    transform: scale(1);
 }
 
-.container{
+.container {
     overflow: hidden;
-} 
+}
 
-.column img{
+.column img {
     width: 100px;
     border-radius: 45%;
     box-shadow: black -12px 10px 10px;
 }
-.column{
+
+.column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 3%;
@@ -82,7 +88,7 @@ header{
     margin-bottom: 5%;
 }
 
-.column .left{
+.column .left {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -91,8 +97,8 @@ header{
     animation-duration: 2s;
 }
 
-.column .right{
-    display:grid;
+.column .right {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 100px;
@@ -100,28 +106,29 @@ header{
     animation-duration: 2s;
 }
 
-@keyframes moveleft{
-    from{
+@keyframes moveleft {
+    from {
         transform: translateX(700px);
         opacity: 0;
     }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes moveright{
-    from{
-        transform: translateX(-700px);
-        opacity: 0;
-    }
-    to{
+    to {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
-.projects{
+@keyframes moveright {
+    from {
+        transform: translateX(-700px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.projects {
     background-image: var(--index-background);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,17 +137,18 @@ header{
     overflow: hidden;
 }
 
-h1{
+h1 {
     margin-left: 25%;
     color: whitesmoke;
 }
 
-.myprojectbutton img, .trainingbutton img{
+.myprojectbutton img,
+.trainingbutton img {
     margin-left: 20%;
     margin-right: 20%;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     height: 201px;
     width: 201px;
     cursor: pointer;
@@ -160,39 +168,14 @@ h1{
     min-height: 960px;
 }
 
-.personalproject{
+.personalproject {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50% 50%;
-    gap: 30px;
+    gap: 50px;
     margin: 20%;
     margin-top: 10%;
-    margin-bottom: 3%;
 }
-
-/*///////////////////////////////////////////////////*/
-
-/* .personalproject a, .trainingproject a{
-    color: rgb(231, 210, 210);
-    font-size: 27px;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-
-.patientportal{
-    opacity: 0;
-    transition: 0.5s ease;
-    background: transparent;
-}
-
-.wrapper:hover .patientportal{
-    opacity: 1;
-}  */
-
-
-
-
-/*/////////////////////////////////////////////////////*/
 
 .mytrainingproject {
     background-image: url("img/education2.jpeg");
@@ -202,7 +185,7 @@ h1{
     min-height: 960px;
 }
 
-.trainingproject{
+.trainingproject {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -213,44 +196,43 @@ h1{
     margin-bottom: 3%;
 }
 
-.personalproject img, .trainingproject img{
-    padding:1%;
+.personalproject img,
+.trainingproject img {
+    padding: 1%;
     width: 70%;
     border-radius: 10%;
 }
 
-.trainingproject .tasklist{
+.trainingproject .tasklist {
     width: 60%;
 }
 
-.aboutme{
+.aboutme {
     background-image: url('img/multilanguage.jpeg');
     min-height: 900px;
-  
 }
 
-.aboutmetext{
+.aboutmetext {
     text-align: center;
     font-size: 36px;
     letter-spacing: 4px;
     background-color: transparent;
     color: bisque;
     padding: 10%;
-
 }
 
-.aboutmetext a{
-    color:  rgb(122, 74, 74);
+.aboutmetext a {
+    color: rgb(122, 74, 74);
     text-decoration: none;
 }
 
-.aboutmetext a:hover{
+.aboutmetext a:hover {
     text-decoration: underline;
     transition: 1s;
     color: whitesmoke;
 }
 
-.contact{
+.contact {
     background-image: var(--index-background);
     margin: 0;
     padding: 0;
@@ -258,7 +240,8 @@ h1{
     background-size: cover;
 }
 
-.contacttext, h2{
+.contacttext,
+h2 {
     text-align: center;
     font-size: 27px;
     letter-spacing: 3px;
@@ -267,37 +250,39 @@ h1{
     padding: 7%;
 }
 
-.form-control{
+.form-control {
     width: 41%;
-    background:transparent;
-    border:none;
-    outline:none;
+    background: transparent;
+    border: none;
+    outline: none;
     border-bottom: 1px solid grey;
     font-size: 18px;
     margin-bottom: 16px;
 }
 
-input{
+input {
     background-color: transparent;
     height: 45px;
     outline: none;
 }
 
-form .id{
+form .id {
     cursor: pointer;
 }
 
-::placeholder{
+::placeholder {
     color: whitesmoke;
     size: 15px;
     letter-spacing: 2px;
 }
 
-.message, .name, .email{
+.message,
+.name,
+.email {
     color: whitesmoke;
 }
 
-.submit{
+.submit {
     background-color: teal;
     background-color: transparent;
     color: #fff;
@@ -311,68 +296,104 @@ form .id{
     cursor: pointer;
 }
 
-title{
-    size: 50px;
-    background-color: black;
-    letter-spacing: 1px;
-}
-
 @media screen and (max-width:600px) {
-    img{
+    img {
         max-width: 320px;
     }
-
-    .container{
+    .container {
         width: 100%;
     }
-
-    .column img{
+    .column img {
         width: 50%;
     }
-
-    .myprojectbutton img, .trainingbutton img{
+    .myprojectbutton img,
+    .trainingbutton img {
         width: 30%;
         height: 70px;
         width: 70px;
     }
-    
-    .personalproject, .trainingproject{
+    .personalproject,
+    .trainingproject {
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: none;
     }
-
-    h1{
+    h1 {
         font-size: 100%;
         width: 50px;
     }
-
-    .contact{
+    .contact {
         width: 100%;
     }
-    .contacttext, .li{
+    .contacttext,
+    .li {
         margin: auto;
         font-size: 100%;
         width: 50%;
     }
 }
 
+:root {
+    --main-opacity: 1;
+}
 
+.mywebsite,
+.patientportal,
+.schoolmanagementsystem,
+.schooladmin {
+    position: relative;
+    width: 100%;
+}
 
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.overlaymywebsite,
+.overlaypatientportal,
+.overlayschoolmanagementsystem,
+.overlayschooladmin {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 72%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: darkgray;
+    border-radius: 10%;
+}
 
+.mywebsite:hover .overlaymywebsite {
+    opacity: var(--opacity);
+}
 
+.patientportal:hover .overlaypatientportal {
+    opacity: var(--opacity);
+}
 
+.schoolmanagementsystem:hover .overlayschoolmanagementsystem {
+    opacity: var(--opacity);
+}
 
+.schooladmin:hover .overlayschooladmin {
+    opacity: var(--opacity);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.text {
+    color: black;
+    font-size: 23px;
+    letter-spacing: 1px;
+    row-gap: 1px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
