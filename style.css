@@ -337,6 +337,7 @@ form .id {
     --main-opacity: 1;
 }
 
+.schooldatabase,
 .mywebsite,
 .patientportal,
 .schoolmanagementsystem,
@@ -358,6 +359,7 @@ form .id {
     height: auto;
 }
 
+.overlayschooldatabase,
 .overlaymywebsite,
 .overlaypatientportal,
 .overlayschoolmanagementsystem,
@@ -380,6 +382,10 @@ form .id {
     transition: .5s ease;
     background-color: rgb(104, 100, 100);
     border-radius: 10%;
+}
+
+.schooldatabase:hover .overlayschooldatabase {
+    opacity: var(--opacity);
 }
 
 .mywebsite:hover .overlaymywebsite {
