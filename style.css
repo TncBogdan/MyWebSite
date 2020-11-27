@@ -337,6 +337,7 @@ form .id {
     --main-opacity: 1;
 }
 
+.carhire,
 .schooldatabase,
 .mywebsite,
 .patientportal,
@@ -359,8 +360,8 @@ form .id {
     height: auto;
 }
 
-.overlayschooldatabase,
 .overlaycarhire,
+.overlayschooldatabase,
 .overlaymywebsite,
 .overlaypatientportal,
 .overlayschoolmanagementsystem,
