@@ -161,7 +161,7 @@ h1 {
 }
 
 .mypersonalproject {
-    background-image: url("img/education2.jpeg");
+    background-image: url("img/TextureBlue.jpg");
     background-size: cover;
     overflow: hidden;
     margin-bottom: 0%;
@@ -208,7 +208,7 @@ h1 {
 }
 
 .aboutme {
-    background-image: url('img/multilanguage.jpeg');
+    background-image: url('img/TextureBlue.jpg');
     min-height: 900px;
 }
 
