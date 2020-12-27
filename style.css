@@ -57,9 +57,8 @@ header {
 .aboutme,
 .contact,
 .column,
-.projects,
-.mypersonalproject,
-.mytrainingproject {
+.mypersonalproject
+{
     position: relative;
     background-position: center;
     background-size: cover;
@@ -128,36 +127,9 @@ header {
     }
 }
 
-.projects {
-    background-image: var(--index-background);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    padding: 10%;
-    overflow: hidden;
-}
-
 h1 {
     margin-left: 25%;
     color: whitesmoke;
-}
-
-.myprojectbutton img,
-.trainingbutton img {
-    margin-left: 20%;
-    margin-right: 20%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 201px;
-    width: 201px;
-    cursor: pointer;
-    font-size: 10px;
-    gap: 1fr;
-    border: 1px solid rgb(31, 5, 5);
-    width: 1fr;
-    box-shadow: black -10px 15px 10px;
-    border-radius: 45%;
 }
 
 .mypersonalproject {
@@ -177,34 +149,10 @@ h1 {
     margin-top: 10%;
 }
 
-.mytrainingproject {
-    background-image: url("img/education2.jpeg");
-    background-size: cover;
-    overflow: hidden;
-    margin-bottom: 0%;
-    min-height: 960px;
-}
-
-.trainingproject {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 3%;
-}
-
-.personalproject img,
-.trainingproject img {
+.personalproject img {
     padding: 1%;
     width: 70%;
     border-radius: 10%;
-}
-
-.trainingproject .tasklist {
-    width: 60%;
 }
 
 .aboutme {
@@ -306,14 +254,8 @@ form .id {
     .column img {
         width: 50%;
     }
-    .myprojectbutton img,
-    .trainingbutton img {
-        width: 30%;
-        height: 70px;
-        width: 70px;
-    }
-    .personalproject,
-    .trainingproject {
+
+    .personalproject {
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: none;
@@ -338,18 +280,8 @@ form .id {
 }
 
 .carhire,
-.schooldatabase,
 .mywebsite,
-.patientportal,
-.schoolmanagementsystem,
-.schooladmin,
-.petclinic,
-.jokeapp,
-.vendingmachine,
-.tasklist,
-.tictactoe,
-.parkingticket,
-.onlineshop {
+.patientportal{
     position: relative;
     width: 100%;
 }
@@ -361,18 +293,8 @@ form .id {
 }
 
 .overlaycarhire,
-.overlayschooldatabase,
 .overlaymywebsite,
-.overlaypatientportal,
-.overlayschoolmanagementsystem,
-.overlayschooladmin,
-.overlaypetclinic,
-.overlayjokeapp,
-.overlayvendingmachine,
-.overlaytasklist,
-.overlaytictactoe,
-.overlayparkingticket,
-.overlayonlineshop {
+.overlaypatientportal{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -390,51 +312,11 @@ form .id {
     opacity: var(--opacity);
 }
 
-.schooldatabase:hover .overlayschooldatabase {
-    opacity: var(--opacity);
-}
-
 .mywebsite:hover .overlaymywebsite {
     opacity: var(--opacity);
 }
 
 .patientportal:hover .overlaypatientportal {
-    opacity: var(--opacity);
-}
-
-.schoolmanagementsystem:hover .overlayschoolmanagementsystem {
-    opacity: var(--opacity);
-}
-
-.schooladmin:hover .overlayschooladmin {
-    opacity: var(--opacity);
-}
-
-.petclinic:hover .overlaypetclinic {
-    opacity: var(--opacity);
-}
-
-.jokeapp:hover .overlayjokeapp {
-    opacity: var(--opacity);
-}
-
-.vendingmachine:hover .overlayvendingmachine {
-    opacity: var(--opacity);
-}
-
-.tasklist:hover .overlaytasklist {
-    opacity: var(--opacity);
-}
-
-.tictactoe:hover .overlaytictactoe {
-    opacity: var(--opacity);
-}
-
-.parkingticket:hover .overlayparkingticket {
-    opacity: var(--opacity);
-}
-
-.onlineshop:hover .overlayonlineshop {
     opacity: var(--opacity);
 }
 
