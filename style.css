@@ -255,6 +255,11 @@ form .id {
         width: 50%;
     }
 
+    .welcome{
+        width: 100%;
+        min-height: 736px;
+    }
+
     .personalproject {
         width: 100%;
         grid-template-columns: 1fr;
@@ -266,6 +271,7 @@ form .id {
     }
     .contact {
         width: 100%;
+        min-height: 736px;
     }
     .contacttext,
     .li {
@@ -284,12 +290,6 @@ form .id {
 .patientportal{
     position: relative;
     width: 100%;
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 .overlaycarhire,
