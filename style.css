@@ -57,7 +57,7 @@ header {
 .aboutme,
 .contact,
 .column,
-.mypersonalproject
+.openProjects
 {
     position: relative;
     background-position: center;
@@ -132,7 +132,7 @@ h1 {
     color: whitesmoke;
 }
 
-.mypersonalproject {
+.projects {
     background-image: var(--index-background);
     background-size: cover;
     overflow: hidden;
@@ -140,7 +140,7 @@ h1 {
     min-height: 960px;
 }
 
-.personalproject {
+.openProjects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50% 50%;
@@ -149,7 +149,7 @@ h1 {
     margin-top: 10%;
 }
 
-.personalproject img {
+.openProjects img {
     padding: 1%;
     width: 70%;
     border-radius: 10%;
@@ -260,7 +260,7 @@ form .id {
         min-height: 736px;
     }
 
-    .personalproject {
+    .openProjects {
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: none;
@@ -285,16 +285,12 @@ form .id {
     --main-opacity: 1;
 }
 
-.carhire,
-.mywebsite,
-.patientportal{
+.hovereffect{
     position: relative;
     width: 100%;
 }
 
-.overlaycarhire,
-.overlaymywebsite,
-.overlaypatientportal{
+.overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -308,15 +304,7 @@ form .id {
     border-radius: 10%;
 }
 
-.carhire:hover .overlaycarhire {
-    opacity: var(--opacity);
-}
-
-.mywebsite:hover .overlaymywebsite {
-    opacity: var(--opacity);
-}
-
-.patientportal:hover .overlaypatientportal {
+.hovereffect:hover .overlay {
     opacity: var(--opacity);
 }
 
